@@ -7,7 +7,6 @@ import android.net.NetworkCapabilities
 import android.net.NetworkRequest
 import androidx.annotation.RequiresPermission
 import com.github.alexzhirkevich.devkit.communication.MutableStateCommunication
-import com.github.alexzhirkevich.devkit.communication.Releasable
 import com.github.alexzhirkevich.devkit.communication.StateCommunication
 import android.net.ConnectivityManager.NetworkCallback
 interface ConnectivityManager : Releasable {
