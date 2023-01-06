@@ -15,7 +15,7 @@ fun <T> MutableCommunication<T>.asCommunication() : Communication<T> =
     object : Communication<T> by this{}
 
 
-internal object EmptyCommunication : MutableCommunication<Nothing> {
+object EmptyCommunication : MutableCommunication<Nothing> {
     override suspend fun collect(collector: suspend (Nothing) -> Unit) = Unit
 
     override fun map(data: Nothing) = Unit
